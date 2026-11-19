@@ -3,6 +3,6 @@
   <rect x="28" y="28" width="544" height="264" rx="12" fill="#1f4e3d" />
   <text x="300" y="135" text-anchor="middle" fill="#f8ecd2" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700">2°C – 8°C Soğuk Zincir</text>
   <text x="300" y="182" text-anchor="middle" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="20">Sensör Kontrolü • 30 dk İhlal Eşiği • Akış Şeması</text>
-  <rect x="210" y="210" width="180" height="38" rx="19" fill="#c58918" />
-  <text x="300" y="235" text-anchor="middle" fill="#141916" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700">Ödev 1 • Algoritma</text>
+  <rect x="195" y="210" width="210" height="38" rx="19" fill="#c58918" />
+  <text x="300" y="235" text-anchor="middle" fill="#141916" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700">Algoritma • Akış Şeması</text>
 </svg>
