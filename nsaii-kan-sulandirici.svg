@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="320" viewBox="0 0 600 320" role="img" aria-label="NSAİİ ve kan sulandırıcı etkileşimleri görseli">
+  <rect width="600" height="320" rx="16" fill="#f8ecd2" />
+  <rect x="28" y="28" width="544" height="264" rx="12" fill="#163a2d" />
+  <text x="300" y="135" text-anchor="middle" fill="#e0a638" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">NSAİİ & Kan Sulandırıcılar</text>
+  <text x="300" y="182" text-anchor="middle" fill="#edf3ef" font-family="Inter, Arial, sans-serif" font-size="20">İlaç–İlaç Etkileşimi • Kanama Riski Farkındalığı</text>
+  <rect x="195" y="210" width="210" height="38" rx="19" fill="#c58918" />
+  <text x="300" y="235" text-anchor="middle" fill="#141916" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700">İlaç–İlaç Değerlendirmesi</text>
+</svg>
