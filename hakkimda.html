@@ -3,103 +3,61 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hakkımda | Ezgi Vural — Dijital Portfolyo</title>
+  <title>Hakkımda | Ezgi Vural</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <a href="#main-content" class="skip-link">Ana içeriğe atla</a>
-
   <header class="site-header">
-    <div class="container header-inner">
-      <a href="index.html" class="brand">
+    <div class="container nav-wrapper">
+      <a class="brand" href="index.html">
         <span class="brand-dot" aria-hidden="true"></span>
         <span>Ezgi Vural</span>
       </a>
-
-      <div class="nav-controls">
-        <button
-          type="button"
-          id="menu-toggle"
-          class="menu-toggle"
-          aria-expanded="false"
-          aria-controls="primary-nav"
-        >
-          Menü
-        </button>
-
-        <nav id="primary-nav" aria-label="Ana gezinti">
-          <ul class="nav-list" id="nav-list">
-            <li><a href="index.html">Ana Sayfa</a></li>
-            <li><a href="hakkimda.html" aria-current="page">Hakkımda</a></li>
-            <li><a href="projeler.html">Projeler</a></li>
-            <li><a href="iletisim.html">İletişim</a></li>
-          </ul>
-        </nav>
-
-        <button
-          type="button"
-          id="theme-toggle"
-          class="icon-btn"
-          aria-pressed="false"
-          aria-label="Karanlık modu aç veya kapat"
-        >
-          Karanlık Mod
-        </button>
-      </div>
+      <button class="menu-toggle" type="button" aria-label="Menüyü aç" aria-expanded="false">☰</button>
+      <nav class="site-nav" aria-label="Ana menü">
+        <a href="index.html">Ana Sayfa</a>
+        <a href="hakkimda.html" class="active">Hakkımda</a>
+        <a href="projeler.html">Projeler</a>
+        <a href="iletisim.html">İletişim</a>
+        <button id="themeToggle" class="theme-btn" type="button">Karanlık Mod</button>
+      </nav>
     </div>
   </header>
 
-  <main id="main-content" class="container">
-    <h1>Hakkımda</h1>
-
-    <section class="section-block" aria-labelledby="edu-interests-title">
-      <h2 id="edu-interests-title">Eğitim ve İlgi Alanlarım</h2>
-      <div class="grid-2">
-        <article class="card">
-          <div>
-            <div class="card-tag">Eğitim</div>
-            <h3>Eczacılık 4. Sınıf Öğrencisi</h3>
-            <p>
-              Eczacılık fakültesinde 4. sınıf öğrencisiyim. Akademik çalışmalarım ve staj
-              deneyimlerimle birlikte ilaçların güvenli kullanımı, süreç takibi ve
-              dijital okuryazarlık becerilerini bir araya getirmeye özen gösteriyorum.
-            </p>
-          </div>
-        </article>
-
-        <article class="card">
-          <div>
-            <div class="card-tag">İlgi Alanları</div>
-            <h3>Gezmek, Kitap Okumak ve Yürüyüş</h3>
-            <p>
-              Boş zamanlarımda yeni yerler gezmekten, kitap okumaktan ve açık havada
-              yürüyüş yapmaktan keyif alırım. Farklı yerler görmek ve düzenli yürüyüşler
-              yapmak zihnimi tazeleyip ders ve proje çalışmalarıma daha dengeli odaklanmama
-              yardımcı olur.
-            </p>
-          </div>
-        </article>
-      </div>
+  <main class="container page-main">
+    <section class="page-header">
+      <p class="eyebrow">Eczacılık 4. Sınıf • Yaklaşım &amp; YZ Kullanımı</p>
+      <h1>Hakkımda</h1>
+      <p class="lead">
+        Eczacılık eğitimi sürecimde edindiğim klinik ve farmakolojik bakış açısını algoritmik düşünme,
+        veri doğrulama ve sade web tasarımı ile birleştiriyorum.
+      </p>
     </section>
 
-    <section class="section-block" aria-labelledby="role-title">
-      <h2 id="role-title">Kodlama ve YZ’nin Mesleğimdeki Yeri</h2>
+    <section class="grid-2">
       <article class="card">
+        <h2>Mesleki ve Akademik Odak</h2>
         <p>
-          Eczacılık pratiğinde güvenli ve akılcı ilaç kullanımının en kritik boyutlarından
-          biri, hastanın mevcut tedavisi ile günlük beslenme alışkanlıkları arasındaki olası
-          <strong>ilaç–ilaç</strong> ve <strong>ilaç–besin etkileşimlerini</strong> zamanında
-          fark etmektir. Örneğin greyfurt tüketiminin bazı ilaçların metabolizma ve emilim
-          süreçlerini etkileyebilmesi ya da nonsteroid antiinflamatuvar ilaçlar (NSAİİ) ile
-          kan sulandırıcıların birlikte kullanımında kanama riskinin artabilmesi, etkileşim
-          bilgisinin ne kadar hayati olduğunu gösterir. Kodlama okuryazarlığı, bu tür kuralları
-          net koşullara, karar ağaçlarına ve doğrulanabilir veri yapılarına dönüştürme
-          mantığını kavrama imkânı sunar. Yapay zekâ araçları ise vaka senaryoları oluşturma,
-          kod taslakları üretme ve fikir geliştirme aşamalarında hız kazandırır; ancak yapay
-          zekânın ürettiği bilgilerin eksik veya bağlamdan kopuk olabileceği unutulmamalıdır.
-          Bu nedenle her çıktıyı güvenilir kaynaklarla doğrulamak, kişisel/sağlık verilerini
-          korumak ve nihai mesleki değerlendirmeyi eczacılık bilgisiyle yapmak temel
-          önceliğimdir.
+          Özellikle <strong>ilaç–besin etkileşimleri</strong> (greyfurt tüketiminin bazı ilaçların emilim
+          ve metabolizması üzerindeki etkileri) ile <strong>ilaç–ilaç etkileşimleri</strong> (NSAİİ grubu
+          ilaçlar ve kan sulandırıcıların birlikte kullanımında kanama riski farkındalığı) üzerine güvenli
+          ve anlaşılır bilgilendirme kurgularına odaklanıyorum.
+        </p>
+        <p>
+          Soğuk zincir sıcaklık takibi ve eczane stok/SKT yönetimi gibi süreçlerde ise kurallı karar
+          yapıları, girdi doğrulama ve hata önleme mantığını ön planda tutuyorum.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>Kodlama ve Yapay Zekâ Yaklaşımı</h2>
+        <p>
+          Yapay zekâyı fikir üretme, akış kurgulama, arayüz/kod taslağı oluşturma ve farklı senaryoları
+          hızlı değerlendirme aşamalarında yardımcı bir araç olarak kullanıyorum.
+        </p>
+        <p>
+          Ancak üretilen her bilgi ve kod parçasını eczacılık doğruluğu, bağlantı bütünlüğü, erişilebilirlik
+          ve kullanıcı güvenliği açısından kendim inceliyor ve doğruluyorum.
         </p>
       </article>
     </section>
@@ -107,8 +65,8 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>GEP1316 Kodlama Okuryazarlığı • Kişisel Web Portfolyosu</p>
-      <p>Kişisel telefon, ev adresi veya hasta verisi barındırmaz.</p>
+      <p>Ezgi Vural • GEP1316 Kodlama Okuryazarlığı Portfolyosu</p>
+      <p><a href="iletisim.html">İletişim Sayfasına Git</a></p>
     </div>
   </footer>
 
