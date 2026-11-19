@@ -3,38 +3,60 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hakkımda | Ezgi Vural</title>
+  <title>Hakkımda | Ezgi Vural — Dijital Portfolyo</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Ana içeriğe atla</a>
+
   <header class="site-header">
-    <div class="container nav-wrapper">
-      <a class="brand" href="index.html">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
         <span class="brand-dot" aria-hidden="true"></span>
         <span>Ezgi Vural</span>
       </a>
-      <button class="menu-toggle" type="button" aria-label="Menüyü aç" aria-expanded="false">☰</button>
-      <nav class="site-nav" aria-label="Ana menü">
-        <a href="index.html">Ana Sayfa</a>
-        <a href="hakkimda.html" class="active">Hakkımda</a>
-        <a href="projeler.html">Projeler</a>
-        <a href="iletisim.html">İletişim</a>
-        <button id="themeToggle" class="theme-btn" type="button">Karanlık Mod</button>
-      </nav>
+
+      <div class="nav-controls">
+        <button
+          type="button"
+          id="menu-toggle"
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+        >
+          Menü
+        </button>
+
+        <nav id="primary-nav" aria-label="Ana gezinti">
+          <ul class="nav-list" id="nav-list">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="hakkimda.html" aria-current="page">Hakkımda</a></li>
+            <li><a href="projeler.html">Projeler</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+          </ul>
+        </nav>
+
+        <button
+          type="button"
+          id="theme-toggle"
+          class="icon-btn"
+          aria-pressed="false"
+          aria-label="Karanlık modu aç veya kapat"
+        >
+          Karanlık Mod
+        </button>
+      </div>
     </div>
   </header>
 
-  <main class="container page-main">
-    <section class="page-header">
-      <p class="eyebrow">Eczacılık 4. Sınıf • Yaklaşım &amp; YZ Kullanımı</p>
-      <h1>Hakkımda</h1>
-      <p class="lead">
-        Eczacılık eğitimi sürecimde edindiğim klinik ve farmakolojik bakış açısını algoritmik düşünme,
-        veri doğrulama ve sade web tasarımı ile birleştiriyorum.
-      </p>
-    </section>
+  <main id="main-content" class="container">
+    <h1>Hakkımda</h1>
+    <p class="lead">
+      Eczacılık eğitimi sürecimde edindiğim klinik ve farmakolojik bakış açısını algoritmik düşünme,
+      veri doğrulama ve sade web tasarımı ile birleştiriyorum.
+    </p>
 
-    <section class="grid-2">
+    <div class="grid-2">
       <article class="card">
         <h2>Mesleki ve Akademik Odak</h2>
         <p>
@@ -60,13 +82,13 @@
           ve kullanıcı güvenliği açısından kendim inceliyor ve doğruluyorum.
         </p>
       </article>
-    </section>
+    </div>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>Ezgi Vural • GEP1316 Kodlama Okuryazarlığı Portfolyosu</p>
-      <p><a href="iletisim.html">İletişim Sayfasına Git</a></p>
+      <p>GEP1316 Kodlama Okuryazarlığı • Kişisel Web Portfolyosu</p>
+      <p>Kişisel telefon, ev adresi veya hasta verisi barındırmaz.</p>
     </div>
   </footer>
 
