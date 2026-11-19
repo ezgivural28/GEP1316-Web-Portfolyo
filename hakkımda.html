@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hakkımda | Ezgi Vural — Dijital Portfolyo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Ana içeriğe atla</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span>Ezgi Vural</span>
+      </a>
+
+      <div class="nav-controls">
+        <button
+          type="button"
+          id="menu-toggle"
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+        >
+          Menü
+        </button>
+
+        <nav id="primary-nav" aria-label="Ana gezinti">
+          <ul class="nav-list" id="nav-list">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="hakkimda.html" aria-current="page">Hakkımda</a></li>
+            <li><a href="projeler.html">Projeler</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+          </ul>
+        </nav>
+
+        <button
+          type="button"
+          id="theme-toggle"
+          class="icon-btn"
+          aria-pressed="false"
+          aria-label="Karanlık modu aç veya kapat"
+        >
+          Karanlık Mod
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="container">
+    <h1>Hakkımda</h1>
+
+    <section class="section-block" aria-labelledby="edu-interests-title">
+      <h2 id="edu-interests-title">Eğitim ve İlgi Alanlarım</h2>
+      <div class="grid-2">
+        <article class="card">
+          <div>
+            <div class="card-tag">Eğitim</div>
+            <h3>Eczacılık 4. Sınıf Öğrencisi</h3>
+            <p>
+              Eczacılık fakültesinde 4. sınıf öğrencisiyim. Akademik çalışmalarım ve staj
+              deneyimlerimle birlikte ilaçların güvenli kullanımı, süreç takibi ve
+              dijital okuryazarlık becerilerini bir araya getirmeye özen gösteriyorum.
+            </p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div>
+            <div class="card-tag">İlgi Alanları</div>
+            <h3>Gezmek, Kitap Okumak ve Yürüyüş</h3>
+            <p>
+              Boş zamanlarımda yeni yerler gezmekten, kitap okumaktan ve açık havada
+              yürüyüş yapmaktan keyif alırım. Farklı yerler görmek ve düzenli yürüyüşler
+              yapmak zihnimi tazeleyip ders ve proje çalışmalarıma daha dengeli odaklanmama
+              yardımcı olur.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-block" aria-labelledby="role-title">
+      <h2 id="role-title">Kodlama ve YZ’nin Mesleğimdeki Yeri</h2>
+      <article class="card">
+        <p>
+          Eczacılık pratiğinde güvenli ve akılcı ilaç kullanımının en kritik boyutlarından
+          biri, hastanın mevcut tedavisi ile günlük beslenme alışkanlıkları arasındaki olası
+          <strong>ilaç–ilaç</strong> ve <strong>ilaç–besin etkileşimlerini</strong> zamanında
+          fark etmektir. Örneğin greyfurt tüketiminin bazı ilaçların metabolizma ve emilim
+          süreçlerini etkileyebilmesi ya da nonsteroid antiinflamatuvar ilaçlar (NSAİİ) ile
+          kan sulandırıcıların birlikte kullanımında kanama riskinin artabilmesi, etkileşim
+          bilgisinin ne kadar hayati olduğunu gösterir. Kodlama okuryazarlığı, bu tür kuralları
+          net koşullara, karar ağaçlarına ve doğrulanabilir veri yapılarına dönüştürme
+          mantığını kavrama imkânı sunar. Yapay zekâ araçları ise vaka senaryoları oluşturma,
+          kod taslakları üretme ve fikir geliştirme aşamalarında hız kazandırır; ancak yapay
+          zekânın ürettiği bilgilerin eksik veya bağlamdan kopuk olabileceği unutulmamalıdır.
+          Bu nedenle her çıktıyı güvenilir kaynaklarla doğrulamak, kişisel/sağlık verilerini
+          korumak ve nihai mesleki değerlendirmeyi eczacılık bilgisiyle yapmak temel
+          önceliğimdir.
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>GEP1316 Kodlama Okuryazarlığı • Kişisel Web Portfolyosu</p>
+      <p>Kişisel telefon, ev adresi veya hasta verisi barındırmaz.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

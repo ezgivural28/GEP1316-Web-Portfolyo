@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projeler | Ezgi Vural — Dijital Portfolyo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Ana içeriğe atla</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span>Ezgi Vural</span>
+      </a>
+
+      <div class="nav-controls">
+        <button
+          type="button"
+          id="menu-toggle"
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+        >
+          Menü
+        </button>
+
+        <nav id="primary-nav" aria-label="Ana gezinti">
+          <ul class="nav-list" id="nav-list">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="hakkimda.html">Hakkımda</a></li>
+            <li><a href="projeler.html" aria-current="page">Projeler</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+          </ul>
+        </nav>
+
+        <button
+          type="button"
+          id="theme-toggle"
+          class="icon-btn"
+          aria-pressed="false"
+          aria-label="Karanlık modu aç veya kapat"
+        >
+          Karanlık Mod
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="container">
+    <h1>Projeler ve Çalışmalar</h1>
+    <p class="lead">
+      Ders kapsamında geliştirdiğim algoritmik/Python çalışmalarını ve ilaç etkileşimleri
+      eksenindeki inceleme kartlarını aşağıda görebilirsin.
+    </p>
+
+    <div class="controls-bar" role="region" aria-label="Proje filtreleme ve arama">
+      <label for="project-search" class="skip-link">Proje ara</label>
+      <input
+        type="text"
+        id="project-search"
+        class="search-input"
+        placeholder="Anahtar kelime ile ara (ör. stok, greyfurt, NSAİİ)..."
+      />
+
+      <button type="button" class="btn btn-secondary filter-btn" data-filter="all">Tümü</button>
+      <button type="button" class="btn btn-secondary filter-btn" data-filter="ders">Ders Projeleri</button>
+      <button type="button" class="btn btn-secondary filter-btn" data-filter="etkilesim">İlaç Etkileşimleri</button>
+    </div>
+
+    <div id="projects-grid" class="grid-2">
+      <article class="card project-card" data-category="ders" data-keywords="soguk zincir sicaklik algoritma akis semasi odev 1">
+        <div>
+          <img
+            src="assets/soguk-zincir.png"
+            alt="Soğuk zincir ilaç dolabı sıcaklık takibi ve ihlal yönetimi akış şeması görseli"
+          />
+          <div class="card-tag">Ödev 1 • Algoritma &amp; Akış Şeması</div>
+          <h2>Soğuk Zincir İlaç Dolabı Sıcaklık Takibi</h2>
+          <p>
+            2°C–8°C aralığındaki soğuk zincir kayıtlarını inceleyen; sensör hatalarını,
+            anlık sapmaları ve 30 dakika üzeri kritik ihlalleri ayıran sözde kod ve akış
+            şeması çalışması.
+          </p>
+          <p><strong>Ne öğrendim?</strong> Süre eşiklerini ve sensör hatası ayrımını net kurallara bağlamanın hatalı uyarıları önlediğini öğrendim.</p>
+        </div>
+        <p>
+          <a href="https://github.com/ezgivural28/GEP1316-Web-Portfolyo" target="_blank" rel="noopener noreferrer">
+            GitHub Bağlantısı
+          </a>
+        </p>
+      </article>
+
+      <article class="card project-card" data-category="ders" data-keywords="eczane stok son kullanma tarihi python ara degerlendirme odevi 1">
+        <div>
+          <img
+            src="assets/stok-takip.png"
+            alt="Eczane ilaç stok ve son kullanma tarihi takip sistemi proje görseli"
+          />
+          <div class="card-tag">Ara Değerlendirme Ödevi 1 • Python</div>
+          <h2>Eczane İlaç Stok ve Son Kullanma Tarihi Takip Sistemi</h2>
+          <p>
+            İlaç adı, stok adedi, minimum stok sınırı ve son kullanma tarihini doğrulayan;
+            stok ve tarih durumlarını sınıflandırıp CSV raporu üreten Python uygulaması.
+          </p>
+          <p><strong>Ne öğrendim?</strong> Girdi doğrulama, otomatik testler ve veri dışa aktarımında ayırıcı uyumunun güvenilirlik açısından kritik olduğunu gördüm.</p>
+        </div>
+        <p>
+          <a href="https://github.com/ezgivural28/GEP1316-Eczane-Stok-Takip" target="_blank" rel="noopener noreferrer">
+            GitHub Depo Bağlantısı
+          </a>
+        </p>
+      </article>
+
+      <article class="card project-card" data-category="etkilesim" data-keywords="greyfurt ilac besin etkilesimi metabolizma">
+        <div>
+          <img
+            src="assets/greyfurt-etkilesim.png"
+            alt="Greyfurt ve ilaç etkileşimleri inceleme kartı görseli"
+          />
+          <div class="card-tag">İlaç–Besin Etkileşimi</div>
+          <h2>Greyfurt ve İlaç Etkileşimleri İncelemesi</h2>
+          <p>
+            Greyfurt tüketiminin bazı ilaçların metabolizma ve emilim mekanizmalarında
+            yol açabileceği değişimlere dikkat çeken ve hasta bilgilendirmesini
+            sadeleştiren örnek inceleme kartı.
+          </p>
+          <p><strong>Ne öğrendim?</strong> Besin–ilaç etkileşimlerinde genel uyarıları sade ve anlaşılır ifadelerle sunmanın hastanın kafasını karıştırmadan farkındalık sağladığını öğrendim.</p>
+        </div>
+        <p>
+          <a href="https://github.com/ezgivural28/GEP1316-Web-Portfolyo" target="_blank" rel="noopener noreferrer">
+            GitHub Bağlantısı
+          </a>
+        </p>
+      </article>
+
+      <article class="card project-card" data-category="etkilesim" data-keywords="nsaii kan sulandirici antikoagulan ilac etkilesimi">
+        <div>
+          <img
+            src="assets/nsaii-kan-sulandirici.png"
+            alt="NSAİİ ve kan sulandırıcı ilaç etkileşimleri değerlendirme kartı görseli"
+          />
+          <div class="card-tag">İlaç–İlaç Etkileşimi</div>
+          <h2>NSAİİ ve Kan Sulandırıcı Etkileşimleri</h2>
+          <p>
+            Nonsteroid antiinflamatuvar ilaçlar (NSAİİ) ile kan sulandırıcıların birlikte
+            kullanımında artabilecek kanama riskine ve kaynak doğrulama gerekliliğine
+            odaklanan örnek değerlendirme kartı.
+          </p>
+          <p><strong>Ne öğrendim?</strong> Yüksek riskli ilaç birlikteliklerinde kural tabanlı hatırlatıcıların ve kaynak kontrolünün klinik güvenliği desteklediğini kavradım.</p>
+        </div>
+        <p>
+          <a href="https://github.com/ezgivural28/GEP1316-Web-Portfolyo" target="_blank" rel="noopener noreferrer">
+            GitHub Bağlantısı
+          </a>
+        </p>
+      </article>
+    </div>
+
+    <p id="no-results" class="status-box" hidden>
+      Aradığınız kritere uygun proje bulunamadı.
+    </p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>GEP1316 Kodlama Okuryazarlığı • Kişisel Web Portfolyosu</p>
+      <p>Kişisel telefon, ev adresi veya hasta verisi barındırmaz.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
