@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ana Sayfa | Ezgi Vural — Dijital Portfolyo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Ana içeriğe atla</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span>Ezgi Vural</span>
+      </a>
+
+      <div class="nav-controls">
+        <button
+          type="button"
+          id="menu-toggle"
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+        >
+          Menü
+        </button>
+
+        <nav id="primary-nav" aria-label="Ana gezinti">
+          <ul class="nav-list" id="nav-list">
+            <li><a href="index.html" aria-current="page">Ana Sayfa</a></li>
+            <li><a href="hakkimda.html">Hakkımda</a></li>
+            <li><a href="projeler.html">Projeler</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+          </ul>
+        </nav>
+
+        <button
+          type="button"
+          id="theme-toggle"
+          class="icon-btn"
+          aria-pressed="false"
+          aria-label="Karanlık modu aç veya kapat"
+        >
+          Karanlık Mod
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="container">
+    <section class="hero" aria-labelledby="hero-title">
+      <div>
+        <span class="badge">GEP1316 • Eczacılık &amp; Kodlama Okuryazarlığı</span>
+        <h1 id="hero-title">Merhaba, ben Ezgi Vural.</h1>
+        <p class="lead">
+          Eczacılık 4. sınıf öğrencisiyim. Dönem boyunca geliştirdiğim algoritmik düşünme,
+          Python ve web çalışmalarımı; özellikle <strong>ilaç-besin</strong> ve
+          <strong>ilaç-ilaç etkileşimleri</strong> ekseninde güvenli ve anlaşılır bilgi
+          sunma yaklaşımımla bu portfolyoda bir araya getiriyorum.
+        </p>
+        <div class="hero-actions">
+          <a href="projeler.html" class="btn btn-primary">Projeleri İncele</a>
+          <a href="hakkimda.html" class="btn btn-secondary">Hakkımda &amp; YZ Yaklaşımım</a>
+        </div>
+      </div>
+
+      <figure class="avatar-card">
+        <img
+          src="assets/avatar.jpg"
+          alt="Ezgi Vural'ın profil görseli"
+        />
+        <figcaption class="avatar-caption">
+          Eczacılık 4. Sınıf • İlaç Etkileşimleri &amp; Dijital Okuryazarlık Portfolyosu
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="section-block" aria-labelledby="highlights-title">
+      <h2 id="highlights-title">Öne Çıkan Odak Alanları</h2>
+      <div class="grid-3">
+        <article class="card">
+          <div>
+            <div class="card-tag">İlaç–Besin Etkileşimi</div>
+            <h3>Greyfurt ve İlaçlar</h3>
+            <p>
+              Greyfurt tüketiminin bazı ilaçların metabolizma ve emilim süreçlerini nasıl
+              etkileyebileceğine dair temel farkındalık ve sade bilgilendirme kurgusu.
+            </p>
+          </div>
+          <p><a href="projeler.html">İlgili projelere git</a></p>
+        </article>
+
+        <article class="card">
+          <div>
+            <div class="card-tag">İlaç–İlaç Etkileşimi</div>
+            <h3>NSAİİ ve Kan Sulandırıcılar</h3>
+            <p>
+              NSAİİ grubu ilaçlar ile antikoagülan/antitrombosit tedavilerin birlikte
+              kullanımında dikkat edilmesi gereken kanama riski ve klinik doğrulama mantığı.
+            </p>
+          </div>
+          <p><a href="projeler.html">İlgili projelere git</a></p>
+        </article>
+
+        <article class="card">
+          <div>
+            <div class="card-tag">Uygulamalı Kodlama</div>
+            <h3>Akış Şemaları &amp; Python</h3>
+            <p>
+              Soğuk zincir sıcaklık takibi ve eczane stok/SKT yönetimi gibi süreçlerde
+              koşul yapıları, doğrulama ve test odaklı çalışma örnekleri.
+            </p>
+          </div>
+          <p><a href="projeler.html">Tüm projeleri gör</a></p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>GEP1316 Kodlama Okuryazarlığı • Kişisel Web Portfolyosu</p>
+      <p>Kişisel telefon, ev adresi veya hasta verisi barındırmaz.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
